@@ -1,0 +1,228 @@
+body{
+	font-famiily: Arial black, Helvetica, sans-serif;
+	font-size:15px;
+	line-height:1.2;
+	padding: 0;
+	background-color: Dimgrey;
+
+}
+/*You use .for class, use # for Id. Overflow-if something goes
+out side the div it's hidden*/
+/*Global*/
+.container{
+ 	width:80%;
+ 	margin: auto;
+ 	overflow: hidden;
+}
+
+/*to put dark background About Us, put in Global.
+Then go put in Aside.*/
+
+.dark{
+	padding:50px;
+	background:black;
+	color:white;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.button_1{
+	height:38px;
+	background:darkorange;
+	border:0;
+	padding-left:20px;
+	padding-right:20px;
+	color:white;
+}
+
+/*We put ul in global so that all ul will have 0 padding or
+margin by default*/
+ul{
+	padding:0;
+	Margin:0;
+}
+
+
+/*Header*/
+header{
+	background:Lightgrey;
+	color:black;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom:#e8491d 10px solid;
+}
+
+/*All the the links of a tag inside the header.
+To remove the underline of the links-Text deco
+To make the menu Uppercase-Text transform*/
+
+header a{
+	color: white;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:18px;
+}
+
+
+
+/*Flot:we want it left; Padding a single padding is 0000.
+Top,Right,Bottom,Left*/
+header li{
+	float:left;
+	display:inline;
+	padding: 0 20px 0 20px;
+
+}
+
+/*We want the menu(nav in html) to be on the right and div
+(branding to be on the left, so go to nav on html. 
+The "branding" is an Id so we use #*/
+
+header #branding{
+	 float:left;
+}
+
+/*We want to set the margin of the h1 of the branding to 0*/
+header #branding{
+	margin:0;
+}
+
+header nav{
+	float:right;
+	margin-top:30px;
+}
+
+/*To make the link orange and safety orange.
+Highlight is a class and a comma for another property in the style.
+Class of "Current". a is links in the class*/
+/*Then to go to html file and wrap "Safety" in span*
+Go to Html*/
+/*We put the current class in li to make it work
+for it. Go to html*/
+header .highlight, header .current a{
+	color:seashell;
+	font-weight:bold;
+
+}
+
+/*To put hoverstate for menu*/
+header a:hover{
+	color:orange;
+	Font-weight:bold;
+}
+
+/*Showcase*/
+/*0 is axis; for horizontal*/
+#showcase{
+	min-height:400px;
+	background:url('../Images/showcase.jpg') no-repeat 0;
+	text-align:center;
+	color:white;
+}
+
+#showcase h1{
+	margin-top:100px;
+	font-size:70px;
+	margin-bottom:10px;
+}
+
+#showcase p{
+	font-size:30px;
+}
+
+/*newsletter*/
+#newsletter{
+	padding:15px;
+	color: white;
+	background:dimgrey;
+}
+
+/*Float h1 to the left and the form to the right*/
+#newsletter h1{
+	float:left;
+}
+
+#newsletter form{
+	float:right;
+	margin-top:15px;
+	Margin:14px;
+}
+
+/*We want to style the input. To be more specific we put the
+input in a type of email. so wee use css3 and put [type="email"]*/
+#newsletter input[type="email"]{
+	padding:4px;
+	height:25px;
+	width:250px;
+}
+
+/*boxes*/
+#boxes{
+	margin-top:20px;
+}
+
+#boxes .box{
+	float:left;
+	width:30%;
+	padding:10px;
+	text-align:center;
+}
+
+/*To make the images smaller*/
+#boxes .box img{
+	width:300px;
+}
+
+/*Sidebar*/
+aside#sidebar{
+	float:right;
+	width:30%;
+	margin-top:10px;
+}
+/*Just to style the form*/
+aside#sidebar .Us input,aside#sidebar .Us textarea{
+	width:90px;
+	padding:7px;
+}
+/*To make About us float to the left with a width as well*/
+
+/*main-col*/
+article#main-col{
+	float:left;
+	width:65%;
+}
+
+/*Our Services*/
+ul#services li{
+	list-style:  none;
+	padding:20px;
+	border:grey solid 5px;
+	margin-bottom:5px;
+	background:lightgray;
+}
+
+/*Media Queris*/
+/*To say that this group of 
+css will only work if it's at a certain width*/
+/*We want to remove the floats. So when it's a small
+size the menu will be stacked ontop each other*/
+
+@media(max-width: 768px){
+  header #branding, header nav, header nav li{
+ 	float:none;
+ 	text-align:center;
+ 	width:100%;
+ }
+
+}
+footer{
+	padding:20px;
+	margin-top:20px;
+	color:white;
+	background-color:black;
+	text-align:center;
+}
+
+#Logbon{
+	text-align:right;
+	margin-top:10px;
+}
